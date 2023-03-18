@@ -1,0 +1,93 @@
+/* reset geral do css da pagina */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+    
+
+}
+
+/* condiguração incial  dos campo geral de visualização */
+
+.content{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    border: 1px solid #000;
+    
+
+}
+
+.content h1{
+
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 2.5rem;
+
+}
+
+/* configuração de estilo da lista de pokemons */
+
+.pokemon-list{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid #000;
+    width: 35%;
+    min-height: 80vh;
+
+}
+
+.pokemon-list ol{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.mini-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 1rem;
+    background-color: #055414;
+    border-radius: 1rem;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    margin: 0.1rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.info-mini-card h3, p{
+    margin-bottom:1rem;
+    color: #fff;
+    font-weight: bolder;
+
+}
+
+.info-mini-card p {
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    background-color: #246931;
+}
+
+.mini-card img{
+    height: 100px;
+}
+
+.pokedex-card{
+    border: 1px solid #000; 
+    width: 65%;
+    height: 80vh;
+}
