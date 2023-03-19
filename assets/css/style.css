@@ -86,6 +86,7 @@
     height: 100px;
 }
 
+/* visualização de dados compelta do pokemon no frontdex */
 .pokedex-card{
     border: 1px solid #000; 
     width: 65%;

@@ -1,0 +1,1 @@
+Projeto criado para treinar a criação completa  de um prjeto usando HTML, CSS e JavaScript Vanilla.
