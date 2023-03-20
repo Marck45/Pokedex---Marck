@@ -92,10 +92,6 @@ async function pokemonViwer(pokemonURL) {
           <td>${pokemon.weight / 10}kg</td>
         </tr>
         <tr class="info-data">
-          <td class="td-label">Abilities</td>
-          ${pokemon.abilities.map((ability) => `<td>${ability}</td>`).join('')}
-        </tr>
-        <tr class="info-data">
           <td class="td-label">Base Xp</td>
           <td>${pokemon.xp}</td>
         </tr>

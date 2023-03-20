@@ -171,6 +171,7 @@
     justify-content: space-between;
     margin:2rem 0 0 2rem;
     width: 90%;
+    height: 40%;
 
 }
 
@@ -207,7 +208,7 @@
     justify-content: flex-start;
     flex-direction: column;
     width: 100%;
-    height: 50%;
+    height: 60%;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
@@ -245,8 +246,12 @@
 }
 
 table{
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 80%;
+}
+
+table td{
+    text-align: center;
 }
 
 
@@ -254,6 +259,7 @@ table{
     color: #000;
     font-weight: bolder;
     width: 50%;
+    
 }
 
 /* base status config */
