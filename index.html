@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets\css\style.css" />
     <script src="assets\scripts\Api.js" defer></script>
+    <script src="assets\scripts\pokemon-module.js" defer></script>
     <script src="assets\scripts\index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,11 +26,17 @@
 
         <!-- mini card com dados de tipo e imagem do pokemon -->
         <ol id="pokemon">
-          </div>
+        
         </ol>
 
-
+          <div class="paginacao">
+            <button id="LoadMoreButton" type="button">
+              Load More...
+            </button>
+          </div>
+        
       </div>
+      
 
       <!-- Visualização de todos os dados do pokemon com status de batalha -->
       <div class="pokedex-card">
@@ -43,7 +50,6 @@
           <div>
             <h3>Nº 001</h3>
           </div>
-
         </div>
         <!-- imagem e dados de posição do pokemon -->
         <div class="img-card">

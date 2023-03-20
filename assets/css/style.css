@@ -18,7 +18,7 @@
 .content{
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     padding: 1rem;
     border: 1px solid #000;
@@ -59,6 +59,29 @@
     
 }
 
+
+.normal {background-color: #a6a877}
+.grass {background-color: #77c850}
+.fire {background-color:#ee7f30}
+.water {background-color:#678fee}
+.electric {background-color:#f7cf2e}
+.ice {background-color:#98d5d7}
+.ground {background-color:#dfbf69}
+.flying {background-color:#a98ff0}
+.poison {background-color:#a040a0}
+.fighting {background-color:#bf3029}
+.psychic {background-color:#f65687}
+.dark {background-color:#725847}
+.rock {background-color:#b8a137}
+.bug {background-color:#a8b720}
+.ghost {background-color:#6e5896}
+.steel {background-color:#b9b7cf}
+.dragon {background-color:#6f38f6}
+.fairy {background-color:#f9aec7}
+
+
+
+
 .mini-card {
     display: flex;
     justify-content: center;
@@ -66,7 +89,6 @@
     flex-wrap: wrap;
     list-style: none;
     padding: 1rem;
-    background-color: #055414;
     border-radius: 1rem;
     height: 150px;
     width: 250px;
@@ -85,14 +107,40 @@
 }
 
 .info-mini-card p {
-    border: 1px solid #fff;
+    padding: 0.5rem;
     border-radius: 1rem;
-    background-color: #246931;
+    filter: brightness(1.1);
+   
 }
 
 .mini-card img{
-    height: 120px;
+    height:70px;
+    margin-left: 1rem;
 }
+
+
+.paginacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding: 1rem;
+}
+
+.paginacao button{
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+
 
 /* visualização de dados compelta do pokemon no frontdex */
 .pokedex-card{
