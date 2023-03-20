@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets\css\style.css" />
+    <script src="assets\scripts\Api.js" defer></script>
     <script src="assets\scripts\index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,18 +24,7 @@
         <h1>Pokedex</h1>
 
         <!-- mini card com dados de tipo e imagem do pokemon -->
-        <ol>
-          <div class="mini-card">
-            <div class="info-mini-card">
-
-              <h3>Bubalsaur</h3>
-              <p>Planta</p>
-              <p>Venenoso</p>
-
-            </div>
-            <div class="img-mini-card">
-              <img src="assets\img\bulbasaur.png" alt="bulbasaur" />
-            </div>
+        <ol id="pokemon">
           </div>
         </ol>
 
@@ -43,22 +33,100 @@
 
       <!-- Visualização de todos os dados do pokemon com status de batalha -->
       <div class="pokedex-card">
+        <!-- dados iniciais do pokemon -->
         <div class="info-card">
-
-          <h3>Bubalsaur</h3>
-          <p>Planta</p>
-          <p>Venenoso</p>
+          <div>
+            <h3>Bubalsaur</h3>
+            <p>Planta</p>
+            <p>Venenoso</p>
+          </div>
+          <div>
+            <h3>Nº 001</h3>
+          </div>
 
         </div>
+        <!-- imagem e dados de posição do pokemon -->
         <div class="img-card">
           <img src="assets\img\bulbasaur.png" alt="bulbasaur" />
         </div>
+        <!-- buttom de dados do pokemon  -->
         <div class="info-stats">
+
           <div class="btn-info">
             <button>About</button>
             <button>Base Stats</button>
             <button>Evolution</button>
             <button>Moves</button>
+          </div>
+          <!-- telas com dados de acordo com buttom selecionado -->
+          <div class="card-about">
+            <table class="table-stats hide">
+              <tr class="info-data">
+                <td class="td-label">Species</td>
+                <td>Seed</td>
+              </tr>
+              <tr class="info-data">
+                <td class="td-label">Height</td>
+                <td>2'3.6' (0.70 cm)</td>
+              </tr>
+              <tr class="info-data">
+                <td class="td-label">Weight</td>
+                <td>215.2 lbs (6.9 kg)</td>
+              </tr>
+              <tr class="info-data">
+                <td class="td-label">Abilities</td>
+                <td>Overgrow, Chiorophyl</td>
+              </tr>
+            </table>
+            <!-- Titulo da segunda tabela  -->
+            <h3 class="title-about2 hide">Breeding</h3>
+            <!-- Segunda tabela do status -->
+            <table class="table-stats hide">
+              <tr class="info-data">
+                <td class="td-label">Gender</td>
+                <td>Male</td>
+              </tr>
+              <tr class="info-data">
+                <td class="td-label">Egg Monster</td>
+                <td>Monster</td>
+              </tr>
+              <tr class="info-data">
+                <td class="td-label">Egg Cycle</td>
+                <td>Grass</td>
+              </tr>
+            </table>
+          </div>
+          <div class="base-stats">
+            <table>
+              <tr class="info-data">
+                <td class="td-label">Hp</td>
+                <td>45</td>
+              </tr>
+              <tr class="info-data">
+                <td class="td-label">Attack</td>
+                <td>60</td>
+              </tr>
+              <tr class="info-data">
+                <td class="td-label">Defense</td>
+                <td>48</td>
+              </tr>
+              <tr class="info-data">
+                <td class="td-label">Spk.Atk</td>
+                <td>45</td>
+              </tr>
+              <tr class="info-data">
+                <td class="td-label">Sp.Def</td>
+                <td>45</td>
+              </tr>
+              <tr class="info-data">
+                <td class="td-label">Speed</td>
+                <td>45</td>
+              </tr>
+              <tr class="info-data">
+                <td class="td-label">Total</td>
+                <td>317</td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
