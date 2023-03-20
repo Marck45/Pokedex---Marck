@@ -20,7 +20,7 @@
     <section class="content"> 
 
       <!-- lista de todos os pokemons  -->
-      <div class="pokemon-list">
+      <div class="pokemon-list" id="pokemon-list">
 
         <h1>Pokedex</h1>
 
@@ -29,17 +29,17 @@
         
         </ol>
 
+        <!-- paginação dos dados da API -->
           <div class="paginacao">
             <button id="LoadMoreButton" type="button">
               Load More...
             </button>
           </div>
-        
+  
       </div>
       
-
       <!-- Visualização de todos os dados do pokemon com status de batalha -->
-      <div class="pokedex-card">
+      <div class="pokedex-card" id="pokemon-dex">
         <!-- dados iniciais do pokemon -->
         <div class="info-card">
           <div>
@@ -48,7 +48,7 @@
             <p>Venenoso</p>
           </div>
           <div>
-            <h3>Nº 001</h3>
+            <h3>#001</h3>
           </div>
         </div>
         <!-- imagem e dados de posição do pokemon -->
@@ -66,7 +66,7 @@
           </div>
           <!-- telas com dados de acordo com buttom selecionado -->
           <div class="card-about">
-            <table class="table-stats hide">
+            <table class="table-stats">
               <tr class="info-data">
                 <td class="td-label">Species</td>
                 <td>Seed</td>
@@ -85,9 +85,9 @@
               </tr>
             </table>
             <!-- Titulo da segunda tabela  -->
-            <h3 class="title-about2 hide">Breeding</h3>
+            <h3 class="title-about2">Breeding</h3>
             <!-- Segunda tabela do status -->
-            <table class="table-stats hide">
+            <table class="table-stats">
               <tr class="info-data">
                 <td class="td-label">Gender</td>
                 <td>Male</td>
@@ -102,13 +102,13 @@
               </tr>
             </table>
           </div>
-          <div class="base-stats">
-            <table>
-              <tr class="info-data">
+          <div class="base-stats ">
+            <table class="hide">
+              <tr class="info-data hide">
                 <td class="td-label">Hp</td>
                 <td>45</td>
               </tr>
-              <tr class="info-data">
+              <tr class="info-data hide">
                 <td class="td-label">Attack</td>
                 <td>60</td>
               </tr>
