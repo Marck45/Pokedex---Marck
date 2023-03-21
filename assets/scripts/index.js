@@ -51,9 +51,8 @@ loadMoreButton.addEventListener("click", () => {
 
 // função para visualizar status do pokemon
 
-async function pokemonViwer(pokemonURL) {
+async function pokemonViwer(pokemonURL, result) {
   const pokemon = await pokeApi.getPokemonsDetail({ url: pokemonURL });
-  console.log(pokemon);
   const ViewrHtml = `
   <div class="info-card">
     <div>
@@ -98,10 +97,10 @@ async function pokemonViwer(pokemonURL) {
       </table>
     </div>
     <div class="base-stats">
-      <table class="">${pokemon.stats.map((base, nameBase)=> `
+      <table class="">${pokemon.attribut.map((item)=> `
             <tr class="info-data ">
-            <td class="td-label">${nameBase}</td>
-            <td>${base}</td>
+            <td class="td-label">${item[0]}</td>
+            <td>${item[1]}</td>
             </tr>`).join('')}`;
 
   pokemonViwerDex.innerHTML = ViewrHtml;

@@ -14,10 +14,12 @@ function convertPokemonApiDetailtoPokemon(pokedetail){
   pokemon.abilities = abilities;
   pokemon.ability = ability;
 
-  const nameStats = pokedetail.stats.map((nameBaseSlot)=> nameBaseSlot.stat.url);
+  const nameStats = pokedetail.stats.map((nameBaseSlot)=> nameBaseSlot.stat.name);
   const nameBase = nameStats;
   const stats = pokedetail.stats.map((statsSlot)=> statsSlot.base_stat);
   const [base] = stats;
+
+  pokemon.attribut = nameBase.map((value, index) => [value, stats[index]]); 
   
   pokemon.stats = stats;
   pokemon.base = base;
@@ -30,6 +32,7 @@ function convertPokemonApiDetailtoPokemon(pokedetail){
   pokemon.weight = pokedetail.weight;
   pokemon.height = pokedetail.height;
   pokemon.xp = pokedetail.base_experience;
+
   return pokemon;
 }
 

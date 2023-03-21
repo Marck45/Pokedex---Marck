@@ -1,7 +1,31 @@
-Projeto criado para treinar a criação completa de um prjoeto usando HTML, CSS e JavaScript Vanilla.
+Pokedex
+Este é um projeto JavaScript de uma Pokedex, uma aplicação web que permite aos usuários buscar e visualizar informações sobre Pokémons.
 
-Utilização da PokeApi: https://pokeapi.co
+<p align="center">
+  <img src="https://img.shields.io/badge/made%20by-ChatGPT-blue.svg" >
+  <img src="https://img.shields.io/badge/JavaScript-yellow.svg">
+  <img src="https://img.shields.io/badge/HTML5-orange.svg">
+  <img src="https://img.shields.io/badge/CSS3-blue.svg">
+</p>
+<p align="center">
+  <img src="https://img.shields.io/github/license/usuario/nome-do-repositorio" >
+</p>
+🚀 Como usar
+Para utilizar a aplicação, siga os seguintes passos:
 
-Layout de criação propria utilizando HTML e CSS Puro usando FlexGrind 
+Clone ou faça o download deste repositório para a sua máquina local.
+Abra o arquivo index.html em seu navegador.
 
-Feito multirequisições para utilização da API
+Na barra dlateral, escolha o  Pokémon que você deseja visualizar.
+
+Clique nele.
+
+Aguarde alguns instantes enquanto a aplicação carrega as informações do Pokémon.
+
+Visualize as informações do Pokémon, incluindo sua imagem, tipo, habilidades e estatísticas.
+
+🤝 Contribuindo
+Se você deseja contribuir com este projeto, fique à vontade para fazer um fork deste repositório e enviar um pull request com suas alterações.
+
+📝 Licença
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
