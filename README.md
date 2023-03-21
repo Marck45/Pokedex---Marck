@@ -8,7 +8,7 @@ Este é um projeto JavaScript de uma Pokedex, uma aplicação web que permite ao
   <img src="https://img.shields.io/badge/CSS3-blue.svg">
 </p>
 <p align="center">
-  <img src="https://img.shields.io/github/Marck45/Pokedex---Marck" >
+  <img src="https://img.shields.io/github/marck45/Pokedex---Marck" >
 </p>
 
 🚀 Como usar
